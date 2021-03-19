@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "start": "webpack serve --open",
     "build": "webpack --config webpack.config.js"
   },
   "keywords": [
@@ -13,6 +14,7 @@
   "author": "pavlo.khrebto@gmail.com",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
@@ -24,6 +26,7 @@
     "ts-loader": "^6.2.1",
     "typescript": "^3.4.3",
     "webpack": "^5.26.3",
-    "webpack-cli": "^4.5.0"
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
   }
 }
