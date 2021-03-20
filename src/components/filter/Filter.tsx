@@ -1,7 +1,7 @@
 import React from 'react';
 
 import InputText from '../form/InputText';
-import Button from './Button';
+import Button from '../form/Button';
 
 import './sass/filter.scss';
 

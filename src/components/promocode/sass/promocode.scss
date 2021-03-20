@@ -1,0 +1,36 @@
+.promocode {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    &__title {
+        text-transform: uppercase;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 18px;
+        letter-spacing: 0.015em;
+        text-transform: uppercase;
+        color: #7D7D7D;
+    }
+
+    &__container {
+        height: 48px;
+        background: #FFFFFF;
+        border: 1px solid #CFD2D9;
+        box-sizing: border-box;
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 17px;
+        padding-right: 17px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 22px;
+        color: #262626;
+    }
+}

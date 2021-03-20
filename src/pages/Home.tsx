@@ -3,8 +3,17 @@ import React from 'react';
 import Layout from '../components/layout/Layout';
 import Filter from '../components/filter/Filter';
 
+import './sass/home.scss';
+import ServiceListItem from '../components/services/ServiceListItem';
+
 export default function Home(): JSX.Element {
-    return <Layout title="Services">
+    return (<Layout title="Services">
         <Filter />
-    </Layout>
+        <div className="services-container">
+            <ServiceListItem />
+            <ServiceListItem />
+            <ServiceListItem />
+            <ServiceListItem />
+        </div>
+    </Layout>)
 }
