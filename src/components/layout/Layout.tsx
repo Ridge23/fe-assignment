@@ -7,7 +7,7 @@ import Footer from '../footer/Footer';
 import './sass/layout.scss';
 
 interface ILayout {
-    children: JSX.Element | string;
+    children: JSX.Element | JSX.Element[] | string;
 }
 
 export default function Layout({ children }: ILayout): JSX.Element {
