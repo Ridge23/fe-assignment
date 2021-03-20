@@ -8,6 +8,7 @@
       "noImplicitAny": true,
       "allowSyntheticDefaultImports": true,
       "sourceMap": true,
+      "moduleResolution": "node"
     },
     "include": ["src"]
   }
