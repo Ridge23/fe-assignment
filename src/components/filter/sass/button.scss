@@ -1,0 +1,19 @@
+.button {
+    background: #F5F7FA;
+    border: 1px solid #CFD2D9;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 149px;
+    height: 48px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 28px;
+    color: #262626;
+
+    &--margin-sides {
+        margin: 0 10px;
+    }
+}

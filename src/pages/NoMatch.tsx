@@ -6,5 +6,5 @@ import NotFound from '../components/not-found/NotFound';
 
 export default function NoMatch() {
     let location = useLocation();
-    return <Layout><NotFound location={location.pathname} /></Layout>
+    return <Layout title="Not found"><NotFound location={location.pathname} /></Layout>
 }
