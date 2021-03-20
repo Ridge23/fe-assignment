@@ -7,10 +7,11 @@ import Footer from '../footer/Footer';
 import './sass/layout.scss';
 
 interface ILayout {
+    title: string;
     children: JSX.Element | JSX.Element[] | string;
 }
 
-export default function Layout({ children }: ILayout): JSX.Element {
+export default function Layout({ title, children }: ILayout): JSX.Element {
     return (
         <div className="layout">
             <div className="layout__sidebar">
@@ -21,7 +22,10 @@ export default function Layout({ children }: ILayout): JSX.Element {
                     <TopBar />
                 </div>
                 <div className="layout__content-container">
-                    {children}
+                    <React.Fragment>
+                        <h1 className="layout__content-title">{title}</h1>
+                        {children}
+                    </React.Fragment>
                 </div>
                 <div className="layout__content-footer">
                     <Footer />

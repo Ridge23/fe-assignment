@@ -3,5 +3,5 @@ import React from 'react';
 import Layout from '../components/layout/Layout';
 
 export default function Home(): JSX.Element {
-    return <Layout>HomePage</Layout>
+    return <Layout title="Service">HomePage</Layout>
 }
