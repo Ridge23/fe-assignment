@@ -1,6 +1,7 @@
 import React from 'react';
 
 import SideMenu from '../sidemenu/SideMenu';
+import Footer from '../footer/Footer';
 
 import './sass/layout.scss';
 
@@ -20,8 +21,9 @@ export default function Layout({ children }: ILayout): JSX.Element {
                 <div className="layout__content-container">
                     {children}
                 </div>
-                <footer className="layout__content-footer">
-                </footer>
+                <div className="layout__content-footer">
+                    <Footer />
+                </div>
             </div>
         </div>
     )

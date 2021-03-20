@@ -23,6 +23,7 @@ body {
         display: flex;
         flex-direction: column;
         margin-left: 80px;
+        background-color: #E5E5E5;
     }
 
     &__content-header {
@@ -36,6 +37,8 @@ body {
 
     &__content-footer {
         height: 50px;
-        border: 1px solid black;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 5px;
     }
 }

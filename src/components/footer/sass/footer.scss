@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #A8A8A8;
+    font-size: 13px;
+
+    &__divider {
+        width: 100%;
+        height: 1px;
+        color: #E9E9E9;
+        background-color: #E9E9E9;
+        border: none;
+        margin-bottom: 10px;
+    }
+}
