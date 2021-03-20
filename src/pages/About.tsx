@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Layout from '../components/layout/Layout';
+
 export default function About(): JSX.Element {
-    return <h1>About page</h1>
+    return <Layout>AboutPage</Layout>
 }

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Layout from '../components/layout/Layout';
+
 export default function Home(): JSX.Element {
-    return <h1>Home page</h1>
+    return <Layout>HomePage</Layout>
 }
