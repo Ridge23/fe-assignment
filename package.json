@@ -14,6 +14,7 @@
   "author": "pavlo.khrebto@gmail.com",
   "license": "ISC",
   "dependencies": {
+    "classnames": "^2.2.6",
     "dotenv": "^8.2.0",
     "file-loader": "^6.2.0",
     "react": "^16.12.0",
@@ -25,6 +26,7 @@
     "typeface-rubik": "^1.1.13"
   },
   "devDependencies": {
+    "@types/classnames": "^2.2.11",
     "@types/react": "^16.8.24",
     "@types/react-dom": "^16.0.5",
     "@types/react-redux": "^7.1.16",

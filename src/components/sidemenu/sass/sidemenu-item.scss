@@ -1,0 +1,24 @@
+.side-menu-item {
+    width: 100%;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__icon {
+        box-sizing: border-box;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: 3px solid #888991;
+
+        &--active {
+            border: 3px solid #fff;
+        } 
+
+        :hover > & {
+            border: 3px solid #fff;
+            cursor: pointer;
+        }
+    }
+}
