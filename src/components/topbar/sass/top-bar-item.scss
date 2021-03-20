@@ -1,0 +1,18 @@
+.top-bar-item {
+    margin: 0 20px;
+    &__info {
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19px;
+        color: #262626;
+    }
+    
+    &__title {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        color: #7D7D7D;
+    }
+}

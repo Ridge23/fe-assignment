@@ -23,12 +23,11 @@ body {
         display: flex;
         flex-direction: column;
         margin-left: 80px;
-        background-color: #E5E5E5;
+        background-color: #F5F7FA;
     }
 
     &__content-header {
         height: 80px;
-        border: 1px solid red;
     }
 
     &__content-container {
@@ -40,5 +39,8 @@ body {
         padding-left: 30px;
         padding-right: 30px;
         padding-bottom: 5px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
     }
 }
