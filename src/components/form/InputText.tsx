@@ -2,6 +2,16 @@ import React from 'react';
 
 import './sass/input-text.scss';
 
-export default function InputText(): JSX.Element {
-    return <input type="text" className="input-text" />
+interface IInputText {
+    value: string;
+    onChange: (value: string) => void;
+}
+
+export default function InputText({ value, onChange }: IInputText): JSX.Element {
+    return <input 
+        type="text" 
+        value={value} 
+        className="input-text" 
+        onChange={(event) => { onChange(event.target.value) }}
+    />
 }

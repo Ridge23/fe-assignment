@@ -58,4 +58,4 @@ function Service(state = initState, action: IServiceAction): IServiceState {
     }
 }
 
-export { Service as default, IServiceState, IService };
+export { Service as default, IServiceState, IService, IServiceAction };

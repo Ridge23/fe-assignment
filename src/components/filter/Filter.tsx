@@ -1,18 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import InputText from '../form/InputText';
 import Button from '../form/Button';
 
 import './sass/filter.scss';
 
-export default function Filter(): JSX.Element {
+interface IFilter {
+    handleChange: (value: string) => void;
+}
+
+export default function Filter({ handleChange }: IFilter): JSX.Element {
+    const [value, setValue] = useState('');
+
+    const changeHandler = (value: string = ''): void => { 
+        setValue(value); 
+        handleChange(value); 
+    }
+
     return <div className="filter">
         <div className="filter__title">
             Filter
         </div>
         <div className="filter__content">
-            <InputText />
-            <Button caption="Reset" />
+            <InputText 
+                value={value} 
+                onChange={changeHandler} 
+            />
+            <Button caption="Reset" onClick={() => { changeHandler('') }} />
         </div>
     </div>
 }

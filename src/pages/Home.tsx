@@ -15,12 +15,12 @@ export default function Home(): JSX.Element {
     const dispatch = useDispatch();
     const services = useSelector((state: IState) => state.Service.services);
     useEffect(() => {
-        dispatch(fetchServices())
+        dispatch(fetchServices(''))
     }, []);
 
     return (
         <Layout title="Services">
-            <Filter />
+            <Filter handleChange={(value) => { dispatch(fetchServices(value)) } }/>
             <div className="services-container">
                 {services && services.map((service: IService) => <ServiceListItem 
                     {...service} 
