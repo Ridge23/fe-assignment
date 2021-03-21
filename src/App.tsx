@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import store from './store'
 
-import Home from './pages/Home';
+import Home from './pages/HomeContainer';
 import About from './pages/About';
 import NoMatch from './pages/NoMatch';
 
