@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useCallback } from 'react';
 import { useSelector, useDispatch } from 'react-redux'
 
 import { IState } from '../reducers';
@@ -13,9 +13,16 @@ export default function HomeContainer(): JSX.Element {
         dispatch(fetchServices(''))
     }, []);
 
-    return <Home 
-        services={services} 
-        getServices={(value: string) => dispatch(fetchServices(value))}
-        setServiceActive={(id: number) => dispatch(setServiceActive(id))}
+    const handleFetchServices = useCallback((value: string) => {
+        dispatch(fetchServices(value));
+    }, [dispatch]);
+    const hadnleSetServiceActive = useCallback((id: number) => {
+        dispatch(setServiceActive(id));
+    }, [dispatch]);
+
+    return <Home
+        services={services}
+        getServices={handleFetchServices}
+        setServiceActive={hadnleSetServiceActive}
     />;
 }
