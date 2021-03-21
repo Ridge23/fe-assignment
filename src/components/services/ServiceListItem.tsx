@@ -7,7 +7,12 @@ import { IService } from '../../reducers/Service';
 
 import './sass/service-list-item.scss';
 
-export default function ServiceListItem({ title, description, isActive, promocode }: IService): JSX.Element {
+interface IServiceListItem extends IService {
+    onClick: (id: number) => void;
+}
+
+export default function ServiceListItem(props: IServiceListItem): JSX.Element {
+    const { id, title, description, isActive, promocode, onClick } = props;
     return (
         <div className="service-list-item">
             <div className="service-list-item__info">
@@ -18,7 +23,13 @@ export default function ServiceListItem({ title, description, isActive, promocod
                 <Promocode promocode={promocode} />
             </div>
             <div className="service-list-item__actions">
-                <Button caption="Activate bonus" wide blue />
+                <Button 
+                    caption={!isActive ? "Activate bonus" : 'Active'}
+                    wide 
+                    blue 
+                    disabled={isActive}
+                    onClick={() => {!isActive && onClick(id)}}
+                />
             </div>
         </div>
     )

@@ -25,4 +25,9 @@
         color: #fff;
         background-color: #0085FF;
     }
+
+    &--disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
 }

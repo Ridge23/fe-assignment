@@ -1,3 +1,4 @@
+import { AxiosPromise } from 'axios';
 import ServiceAbstract from './ServiceAbstract';
 
 /**
@@ -7,8 +8,17 @@ import ServiceAbstract from './ServiceAbstract';
     /**
      * @returns {AxiosPromise}
      */
-    getAll() {
+    getAll(): AxiosPromise<any> {
         return this.apiCaller.get('services');
+    }
+
+    /**
+     * @returns {AxiosPromise}
+     */
+    setActive(id: number): AxiosPromise<any> {
+        // id should be placed instead of wildcard "__" in url, but unfortunatelly, there is a bug 
+        // in mockserver
+        return this.apiCaller.patch(`services/__/active`);
     }
 }
 

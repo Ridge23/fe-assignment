@@ -20,6 +20,13 @@ function receiveServicesFailed(errorCode: number) {
     };
 }
 
+function setActive(id: number) {
+    return {
+        type: 'SET_SERVICE_ACTIVE',
+        id
+    }
+}
+
 function fetchServices() {
     return (dispatch: any): Promise<void> => {
         dispatch(requestServices());
@@ -37,4 +44,14 @@ function fetchServices() {
     };
 }
 
-export { fetchServices };
+function setServiceActive(id: number) {
+    return (dispatch: any): Promise<void> => {
+        return servicesService
+            .setActive(id)
+            .then(() => {
+                dispatch(setActive(id))
+            });
+    }
+}
+
+export { fetchServices, setServiceActive };

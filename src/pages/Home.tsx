@@ -7,7 +7,7 @@ import Filter from '../components/filter/Filter';
 
 import { IState } from '../reducers';
 import { IService } from '../reducers/Service';
-import { fetchServices } from '../actions/Services';
+import { fetchServices, setServiceActive } from '../actions/Services';
 
 import './sass/home.scss';
 
@@ -25,6 +25,7 @@ export default function Home(): JSX.Element {
                 {services && services.map((service: IService) => <ServiceListItem 
                     {...service} 
                     key={`service-${service.id}`}
+                    onClick={(id) => { dispatch(setServiceActive(id)) }}
                 />)}
             </div>
         </Layout>

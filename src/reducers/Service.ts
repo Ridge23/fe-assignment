@@ -15,6 +15,7 @@ interface IServiceAction {
     type: string;
     services?: IService[];
     errorCode?: number;
+    id?: number;
 }
 
 const initState: IServiceState = {
@@ -25,6 +26,16 @@ const initState: IServiceState = {
 
 function Service(state = initState, action: IServiceAction): IServiceState {
     switch (action.type) {
+        case 'SET_SERVICE_ACTIVE':
+            return {
+                ...state,
+                services: state.services.map((service: IService) => {
+                    if (service.id === action.id) {
+                        return { ...service, isActive: true }
+                    }
+                    return service;
+                })
+            }
         case 'REQUEST_SERVICES':
             return {
                 ...state,

@@ -1,9 +1,12 @@
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk'; 
+import { composeWithDevTools } from 'redux-devtools-extension';
 
 import rootReducer from './reducers';
 
-const composeEnhancers = (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__;
+const composeEnhancers = composeWithDevTools({
+    maxAge: 500,
+});
 
 const store = createStore(
     rootReducer,
