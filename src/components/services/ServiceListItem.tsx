@@ -13,7 +13,7 @@ export default function ServiceListItem() {
                 <div className="service-list-item__description">Description</div>
             </div>
             <div className="service-list-item__promocode">
-                <Promocode />
+                <Promocode promocode='something1212' />
             </div>
             <div className="service-list-item__actions">
                 <Button caption="Activate bonus" wide blue />
