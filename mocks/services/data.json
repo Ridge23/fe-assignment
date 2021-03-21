@@ -1,0 +1,30 @@
+[
+    {
+       "id": 1,
+       "title": "Siteconstructor.io",
+       "description": "Mobile-first website constructor",
+       "promocode": "itpromositeconstructor",
+       "isActive": false
+    },
+    {
+       "id": 2,
+       "title": "Appvision.com",
+       "description": "Mobile app test appliction",
+       "promocode": "itpromoappvision",
+       "isActive": false
+    },
+    {
+       "id": 4,
+       "title": "Analytics.com",
+       "description": "Check visits of the website",
+       "promocode": "itpromoanalytics",
+       "isActive": false
+    },
+    {
+       "id": 5,
+       "title": "Logotype",
+       "description": "No description",
+       "promocode": "itpromologotype",
+       "isActive": true
+    }
+ ]

@@ -1,9 +1,12 @@
 import { combineReducers } from 'redux';
+import Service, { IServiceState } from './Service';
 
-import Service from './Service';
+interface IState {
+    Service: IServiceState
+}
 
 const rootReducer = combineReducers({
     Service
 })
 
-export default rootReducer
+export {rootReducer as default, IState }

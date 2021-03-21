@@ -1,29 +1,5 @@
 HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
+Content-Type: application/json
+Access-Control-Allow-Origin: *
 
-[
-   {
-      "title": "Siteconstructor.io",
-      "description": "Mobile-first website constructor",
-      "promocode": "itpromositeconstructor",
-      "isActive": false
-   },
-   {
-      "title": "Appvision.com",
-      "description": "Mobile app test appliction",
-      "promocode": "itpromoappvision",
-      "isActive": false
-   },
-   {
-      "title": "Analytics.com",
-      "description": "Check visits of the website",
-      "promocode": "itpromoanalytics",
-      "isActive": false
-   },
-   {
-      "title": "Logotype",
-      "description": "No description",
-      "promocode": "itpromologotype",
-      "isActive": false
-   },
-]
+#import './data.json';
