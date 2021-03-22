@@ -1,9 +1,9 @@
 import React from 'react';
 import { useLocation } from "react-router-dom";
 
-import SideMenuItem from './SideMenuItem';
+import LogoIcon from 'components/icons/LogoIcon/LogoIcon';
 
-import LogoIcon from '../icons/LogoIcon/LogoIcon';
+import SideMenuItem from './SideMenuItem';
 
 import './sass/sidemenu.scss';
 

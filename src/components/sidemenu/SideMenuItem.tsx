@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import classNames from 'classnames';
 
 import './sass/sidemenu-item.scss';
-
 interface ISideMenuItem {
     to: string;
     isActive?: boolean;

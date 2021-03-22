@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Button from '../form/Button';
-import Promocode from '../promocode/Promocode';
+import Button from 'components/form/Button';
+import Promocode from 'components/promocode/Promocode';
 
-import { IService } from '../../reducers/Service';
+import { IService } from 'reducers/Service';
 
 import './sass/service-list-item.scss';
 

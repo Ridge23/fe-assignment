@@ -1,8 +1,8 @@
 import React, { useEffect, useCallback } from 'react';
 import { useSelector, useDispatch } from 'react-redux'
 
-import { IState } from '../reducers';
-import { fetchServices, setServiceActive } from '../actions/Services';
+import { IState } from 'reducers';
+import { fetchServices, setServiceActive } from 'actions/Services';
 
 import Home from './Home';
 

@@ -1,10 +1,10 @@
 import React from 'react';
 
-import ServiceListItem from '../components/services/ServiceListItem';
-import Layout from '../components/layout/Layout';
-import Filter from '../components/filter/Filter';
+import ServiceListItem from 'components/services/ServiceListItem';
+import Layout from 'components/layout/Layout';
+import Filter from 'components/filter/Filter';
 
-import { IService } from '../reducers/Service';
+import { IService } from 'reducers/Service';
 
 import './sass/home.scss';
 

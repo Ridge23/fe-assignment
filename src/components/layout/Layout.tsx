@@ -1,8 +1,8 @@
 import React from 'react';
 
-import SideMenu from '../sidemenu/SideMenu';
-import TopBar from '../topbar/TopBar';
-import Footer from '../footer/Footer';
+import SideMenu from 'components/sidemenu/SideMenu';
+import TopBar from 'components/topbar/TopBar';
+import Footer from 'components/footer/Footer';
 
 import './sass/layout.scss';
 

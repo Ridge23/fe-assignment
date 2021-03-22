@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { CopyIcon } from '../icons/CopyIcon/CopyIcon';
-import copyToClipboard from '../../helpers/copyToClipboard';
+import { CopyIcon } from 'components/icons/CopyIcon/CopyIcon';
+import copyToClipboard from 'helpers/copyToClipboard';
 
 import './sass/promocode.scss';
 

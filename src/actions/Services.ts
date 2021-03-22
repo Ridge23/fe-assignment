@@ -1,5 +1,5 @@
-import { IService, IServiceAction } from '../reducers/Service';
-import servicesService from '../services/ServicesService';
+import { IService, IServiceAction } from 'reducers/Service';
+import servicesService from 'services/ServicesService';
 
 function requestServices(): IServiceAction {
     return {

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import InputText from '../form/InputText';
-import Button from '../form/Button';
+import InputText from 'components/form/InputText';
+import Button from 'components/form/Button';
 
 import './sass/filter.scss';
 
