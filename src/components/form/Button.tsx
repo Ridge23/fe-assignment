@@ -11,7 +11,7 @@ interface IButton {
 
 import './sass/button.scss';
 
-export default function Button({ caption, wide = false, blue = false, disabled = false, onClick = null }: IButton): JSX.Element {
+export default function Button({ caption, wide = false, blue = false, disabled = false, onClick = () => {} }: IButton): JSX.Element {
     const buttonClass = classNames(
         'button', 
         'button--margin-sides',

@@ -22,10 +22,10 @@ export default function Layout({ title, children }: ILayout): JSX.Element {
                     <TopBar />
                 </div>
                 <div className="layout__content-container">
-                    <React.Fragment>
+                    <>
                         <h1 className="layout__content-title">{title}</h1>
                         {children}
-                    </React.Fragment>
+                    </>
                 </div>
                 <div className="layout__content-footer">
                     <Footer />

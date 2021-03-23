@@ -1,14 +1,17 @@
 import { AxiosPromise } from 'axios';
+
+import { IService } from 'reducers/Service';
+
 import ServiceAbstract from './ServiceAbstract';
 
 /**
  * Api Service to fetch sports types.
  */
- class ServicesService extends ServiceAbstract {
+class ServicesService extends ServiceAbstract {
     /**
      * @returns {AxiosPromise}
      */
-    getAll(): AxiosPromise<any> {
+    getAll(): AxiosPromise<IService[]> {
         return this.apiCaller.get('services');
     }
 
