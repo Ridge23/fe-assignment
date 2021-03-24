@@ -2,7 +2,7 @@
 
 exports[`Filter should render correctly 1`] = `
 <Filter
-  handleChange={[Function]}
+  handleChange={[MockFunction]}
 >
   <div
     className="filter"
