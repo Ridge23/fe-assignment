@@ -16,13 +16,13 @@ export default function HomeContainer(): JSX.Element {
     const handleFetchServices = useCallback((value: string) => {
         dispatch(fetchServices(value));
     }, [dispatch]);
-    const hadnleSetServiceActive = useCallback((id: number) => {
+    const handleSetServiceActive = useCallback((id: number) => {
         dispatch(setServiceActive(id));
     }, [dispatch]);
 
     return <Home
         services={services}
         getServices={handleFetchServices}
-        setServiceActive={hadnleSetServiceActive}
+        setServiceActive={handleSetServiceActive}
     />;
 }
