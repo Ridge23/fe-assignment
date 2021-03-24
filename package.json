@@ -17,9 +17,6 @@
   "author": "pavlo.khrebto@gmail.com",
   "license": "ISC",
   "jest": {
-    "setupFiles": [
-      "./src/setupTests.js"
-    ],
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ]

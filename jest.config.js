@@ -16,4 +16,7 @@ module.exports = {
     "tsx",
     "scss"
   ],
+  setupFiles: [
+    '<rootDir>/.jest/setupTests.ts'
+  ]
 };
