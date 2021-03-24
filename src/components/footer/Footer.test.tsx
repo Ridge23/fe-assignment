@@ -10,5 +10,6 @@ describe('Footer', () => {
 
     expect(component).toMatchSnapshot();
     expect(component.text()).toContain('IT Promocodes, ' + currentYear);
+    expect(component.hasClass('footer')).toBe(true);
   });
 });
