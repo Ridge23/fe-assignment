@@ -1,25 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Filter should render correctly 1`] = `
-<div
-  className="filter"
+<Filter
+  handleChange={[Function]}
 >
   <div
-    className="filter__title"
+    className="filter"
   >
-    Filter
+    <div
+      className="filter__title"
+    >
+      Filter
+    </div>
+    <div
+      className="filter__content"
+    >
+      <InputText
+        onChange={[Function]}
+        value=""
+      >
+        <input
+          className="input-text"
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+      </InputText>
+      <Button
+        caption="Reset"
+        onClick={[Function]}
+      >
+        <button
+          className="button button--margin-sides"
+          onClick={[Function]}
+        >
+          Reset
+        </button>
+      </Button>
+    </div>
   </div>
-  <div
-    className="filter__content"
-  >
-    <InputText
-      onChange={[Function]}
-      value=""
-    />
-    <Button
-      caption="Reset"
-      onClick={[Function]}
-    />
-  </div>
-</div>
+</Filter>
 `;
