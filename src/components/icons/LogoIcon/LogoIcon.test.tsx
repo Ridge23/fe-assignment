@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 
 import LogoIcon from './LogoIcon'
 
-describe('Footer', () => {
+describe('LogoIcon', () => {
   it('should render correctly', () => {
     const component = shallow(<LogoIcon />);
 
