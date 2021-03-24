@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import LogoIcon from 'components/icons/LogoIcon/LogoIcon';
 
@@ -12,7 +12,9 @@ export default function SideMenu(): JSX.Element {
     return (
         <div className="sidemenu">
             <div className="sidemenu__logo">
-                <LogoIcon />
+                <Link to='/'>
+                    <LogoIcon />
+                </Link>
             </div>
             <div className="sidemenu__menu">
                 <SideMenuItem to='/' isActive={location.pathname === '/'} />
