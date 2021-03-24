@@ -24,7 +24,7 @@ export default function Layout({ title, children }: ILayout): JSX.Element {
                 <div className="layout__content-container">
                     <>
                         <h1 className="layout__content-title">{title}</h1>
-                        {children}
+                        <div className="layout-content-container">{children}</div>
                     </>
                 </div>
                 <div className="layout__content-footer">

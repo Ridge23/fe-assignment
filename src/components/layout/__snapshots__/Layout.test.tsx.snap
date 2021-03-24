@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout should render correctly 1`] = `
+<div
+  className="layout"
+>
+  <div
+    className="layout__sidebar"
+  >
+    <SideMenu />
+  </div>
+  <div
+    className="layout__content"
+  >
+    <div
+      className="layout__content-header"
+    >
+      <TopBar />
+    </div>
+    <div
+      className="layout__content-container"
+    >
+      <h1
+        className="layout__content-title"
+      >
+        test_title
+      </h1>
+      <div
+        className="layout-content-container"
+      >
+        test_content
+      </div>
+    </div>
+    <div
+      className="layout__content-footer"
+    >
+      <Footer />
+    </div>
+  </div>
+</div>
+`;
