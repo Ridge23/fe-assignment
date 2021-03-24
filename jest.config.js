@@ -18,5 +18,6 @@ module.exports = {
   ],
   setupFiles: [
     '<rootDir>/.jest/setupTests.ts'
-  ]
+  ],
+  snapshotSerializers: ["enzyme-to-json/serializer"]
 };

@@ -16,11 +16,6 @@
   ],
   "author": "pavlo.khrebto@gmail.com",
   "license": "ISC",
-  "jest": {
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ]
-  },
   "dependencies": {
     "axios": "^0.21.1",
     "classnames": "^2.2.6",

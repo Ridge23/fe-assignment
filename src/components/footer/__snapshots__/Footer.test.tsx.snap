@@ -1,3 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Footer should render correctly 1`] = `ShallowWrapper {}`;
+exports[`Footer should render correctly 1`] = `
+<footer
+  className="footer"
+>
+  <hr
+    className="footer__divider"
+  />
+  © IT Promocodes, 
+  2021
+</footer>
+`;

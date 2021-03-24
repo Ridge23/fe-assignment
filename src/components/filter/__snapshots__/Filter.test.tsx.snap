@@ -1,3 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Filter should render correctly 1`] = `ShallowWrapper {}`;
+exports[`Filter should render correctly 1`] = `
+<div
+  className="filter"
+>
+  <div
+    className="filter__title"
+  >
+    Filter
+  </div>
+  <div
+    className="filter__content"
+  >
+    <InputText
+      onChange={[Function]}
+      value=""
+    />
+    <Button
+      caption="Reset"
+      onClick={[Function]}
+    />
+  </div>
+</div>
+`;
