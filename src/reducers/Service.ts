@@ -12,7 +12,7 @@ interface IServiceState {
 }
 
 interface IServiceAction {
-    type: string;
+    type?: string;
     services?: IService[];
     errorCode?: number;
     id?: number;
