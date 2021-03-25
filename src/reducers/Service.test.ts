@@ -23,6 +23,23 @@ const services: IService[] = [
     },
 ]
 
+const servicesActive: IService[] = [
+    {
+        id: 1,
+        title: 'test_data',
+        description: 'test_description',
+        promocode: 'test_promocode',
+        isActive: true
+    },
+    {
+        id: 2,
+        title: 'test_data_1',
+        description: 'test_description_1',
+        promocode: 'test_promocode_1',
+        isActive: true
+    },
+]
+
 describe('services reducer', () => {
     it('should return the initial state', () => {
         expect(reducer(undefined, {})).toEqual(
@@ -48,6 +65,18 @@ describe('services reducer', () => {
         ).toEqual(
             {
                 services: services,
+                isFetching: false,
+                errorCode: 0,
+            }
+        )
+    });
+
+    it('should handle SET_SERVICE_ACTIVE', () => {
+        expect(
+            reducer({ ...initState, services }, { type: 'SET_SERVICE_ACTIVE', id: 1 })
+        ).toEqual(
+            {
+                services: servicesActive,
                 isFetching: false,
                 errorCode: 0,
             }
