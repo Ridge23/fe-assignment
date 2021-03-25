@@ -5,13 +5,13 @@
       "target": "es5",
       "module": "es2020",
       "jsx": "react",
-      "noImplicitAny": true,
+      "noImplicitAny": false,
       "allowSyntheticDefaultImports": true,
       "sourceMap": true,
       "moduleResolution": "node",
       "baseUrl": "src",
       "esModuleInterop": true,
-      "lib": ["dom", "esnext"]
+      "lib": ["dom", "esnext"],
     },
     "include": ["src", ".jest/setupTests.js"],
     "exclude": ["node_modules"]

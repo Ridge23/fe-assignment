@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSnackbar } from 'react-simple-snackbar';
 
 import CopyIcon from 'components/icons/CopyIcon/CopyIcon';
 import copyToClipboard from 'helpers/copyToClipboard';
@@ -10,9 +11,12 @@ interface IPromocode {
 }
 
 export default function Promocode({ promocode }: IPromocode): JSX.Element {
+    const [openSnackbar, closeSnackbar] = useSnackbar({ position: 'bottom-right' });
+
     function handleClick(event: React.MouseEvent<HTMLElement>) {
         event.preventDefault();
         copyToClipboard(promocode);
+        openSnackbar('Copied to clipboard', 2000);
     }
 
     return (
