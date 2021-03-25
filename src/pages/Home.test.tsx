@@ -2,7 +2,6 @@ import React from 'react';
 import { shallow } from 'enzyme';
 
 import Home from './Home';
-import Filter from '../components/Filter/Filter';
 import ServiceListItem from '../components/services/ServiceListItem';
 import { IService } from 'reducers/Service';
 
@@ -18,7 +17,14 @@ describe('Home', () => {
                 description: 'test_description',
                 promocode: 'test_promocode',
                 isActive: false
-            }
+            },
+            {
+                id: 2,
+                title: 'test_data_1',
+                description: 'test_description_1',
+                promocode: 'test_promocode_1',
+                isActive: true
+            },
         ]
 
         const component = shallow(<Home 
@@ -28,7 +34,7 @@ describe('Home', () => {
         />
         );
 
-        expect(component.contains(<ServiceListItem {...services[0]} onClick={()=>{}} />)).toBe(false);
+        expect(component.find('ServiceListItem').length).toBe(2);
 
         expect(component).toMatchSnapshot();
     });

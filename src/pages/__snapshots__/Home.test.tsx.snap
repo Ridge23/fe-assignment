@@ -19,6 +19,15 @@ exports[`Home should render correctly with data 1`] = `
       promocode="test_promocode"
       title="test_data"
     />
+    <ServiceListItem
+      description="test_description_1"
+      id={2}
+      isActive={true}
+      key="service-2"
+      onClick={[Function]}
+      promocode="test_promocode_1"
+      title="test_data_1"
+    />
   </div>
 </Layout>
 `;
