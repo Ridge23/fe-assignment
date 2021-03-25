@@ -83,6 +83,6 @@ To run tests, just run ``npm t``
 
 - What are the most important performance issues in React web applications?
 
-``Bundle size is usually the main problem, as React itself with webpack tree-shaking is quite optimized. However, when developing React apps, we need to stick to some, lets say, advicss: avoiding inline function definitions, use immutable objects, check for rerenders and do not rerender if not needed (previously in React - shouldComponentUpdate), use throttling and debouncing, always use keys for components where needed, memoization where possible)``
+``Bundle size is usually the main problem, as React itself with webpack tree-shaking is quite optimized. However, when developing React apps, we need to stick to some, lets say, advises: avoiding inline function definitions, use immutable objects, check for rerenders and do not rerender if not needed (previously in React - shouldComponentUpdate), use throttling and debouncing, always use keys for components where needed, memoization where possible), use code-splitting``
 
 
